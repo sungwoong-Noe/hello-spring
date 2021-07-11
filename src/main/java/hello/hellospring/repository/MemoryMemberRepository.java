@@ -1,9 +1,11 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>(); //저장하는 메모리 Long 타입, Member는 값
